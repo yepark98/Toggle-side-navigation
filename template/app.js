@@ -1,12 +1,12 @@
 // do something!
 const navElement = document.getElementById("activeNav");
-const btnElement = document.getElementById("toggleButton");
+const btnElement = document.getElementById("toggleBtn");
 
 const btnClick = () => {
-  const className = navElement.classList;
-  if (className.contains("active")) {
-    navElement.classList.toggle("active", false);
+  const classes = navElement.classList;
+  if (classes.contains("active")) {
+    navElement.classList.toggle("active");
   } else {
-    navElement.classList.toggle("active", true);
+    navElement.classList.toggle("active");
   }
 };
