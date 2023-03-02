@@ -1,12 +1,16 @@
 // do something!
 const navElement = document.getElementById("activeNav");
 const btnElement = document.getElementById("toggleBtn");
+const bodyElement = document.getElementById("activeBody");
 
 window.onload = () => {
   const active = getCookie("active");
   if (active === "true") {
     navElement.classList.toggle("active");
   }
+  setTimeout(() => {
+    bodyElement.style.visibility = "visible";
+  }, 100);
 };
 
 window.onunload = () => {
