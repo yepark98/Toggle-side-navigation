@@ -10,6 +10,7 @@ window.onload = () => {
   }
   setTimeout(() => {
     bodyElement.style.visibility = "visible";
+    bodyElement.classList.remove("preload");
   }, 100);
 };
 
